@@ -8,10 +8,16 @@ export default class Queue<T> {
   private head?: Node<T>;
   private tail: Node<T>;
 
+  constructor() {
+    this.length = 0;
+    this.head = undefined;
+    this.tail = undefined;
+  }
+
   enqueue(item: T): void {
     this.length++;
     const node = { value: item } as Node<T>;
-    if (!this.tail) {
+    if (!this.head) {
       this.head = this.tail = node;
       return;
     }
