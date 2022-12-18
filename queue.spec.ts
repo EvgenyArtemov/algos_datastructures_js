@@ -1,5 +1,5 @@
 import Queue from './Queue';
-import { describe, expect, test } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 test('queue', function () {
   const queue = new Queue<number>();
 
