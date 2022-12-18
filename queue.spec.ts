@@ -10,10 +10,6 @@ test('queue', function () {
   expect(queue.dequeue()).toEqual(5);
   expect(queue.length).toEqual(2);
 
-  // this must be wrong..?
-  // debugger;
-
-  // i hate using debuggers
   queue.enqueue(11);
   expect(queue.dequeue()).toEqual(7);
   expect(queue.dequeue()).toEqual(9);
